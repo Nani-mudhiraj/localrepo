@@ -1,11 +1,21 @@
-pipeline {
-    agent any
+public class Pipeline {
 
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+    public static void main(String[] args) {
+        checkOut();
+        build();
+        deploy();
+    }
+
+    public static void checkOut() {
+        System.out.println("Hello World");
+    }
+
+    public static void build() {
+        System.out.println("Hi, I am Here");
+    }
+
+    public static void deploy() {
+        System.out.println("Deploy Here");
     }
 }
+
